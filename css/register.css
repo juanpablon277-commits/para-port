@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+form{
+    width: 300px;
+
+}
+
+input{
+    border: none;
+}
+
+button{
+    margin-bottom: 10px;
+}
+.error {
+    display: none;    /* Esconde todos os erros por padrão */
+    color: red;       /* Estilização básica para parecer um erro */
+    font-size: 0.8rem;
+    margin-top: 5px;
+}

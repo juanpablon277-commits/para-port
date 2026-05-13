@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Controle de gastos</title>
+</head>
+
+<body class="centralize">
+
+    <form action="exemplo.html">
+
+        <div class="form-field">
+            <div><label for="email">Email</label></div>
+            <input type="email" name="email" oninput="onChangeEmail()" id="email" placeholder="Digite seu email">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+        </div>
+        <div class="form-field">
+            <div><label for="password">Senha</label></div>
+            <input type="password" id="password" name="password" oninput="onChangePassword()"
+                placeholder="Digite sua senha">
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
+        </div>
+        <div>
+
+            <button class="clear" id="recover-password-button" type="button" onclick="recoverPassword()">Recuperar
+                senha</button>
+        </div>
+        <div>
+
+            <button class="solid" id="login-button" type="button" onclick="login()" disabled>Entrar</button>
+        </div>
+        <div>
+
+            <button class="outline" type="button" onclick="register()">Registrar</button>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/global.css">
+
+<script src="https://www.gstatic.com/firebasejs/12.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.12.1/firebase-auth-compat.js"></script>
+<script src="../js/firebase-init.js"></script>
+
+<script src="../js/script.js"></script>
+<script src="../js/validations.js"></script>
+<script src="../js/loading.js"></script>
+
+
+
+</html>

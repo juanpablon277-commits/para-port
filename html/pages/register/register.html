@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Controle de gastos</title>
+</head>
+
+<body class="centralize">
+    <form>
+        <div class="form-field">
+            <div><label>Email</label></div>
+            <input type="email" placeholder="seu@email.com"
+            oninput="onChangeEmail()" id="email">
+        </div>
+
+        <div class="error" id="email-required-error">
+            Email é obrigatório
+        </div>
+
+        <div class="error" id="email-invalid-error">
+            Email é inválido
+        </div>
+
+        <div class="form-field">
+            <div><label>Senha</label></div>
+            <input type="password" placeholder="senha" id="password" oninput="onChangePassword()">
+            <div class="error" id="password-required-error" >
+                Senha é obrigatória.
+            </div>
+            <div class="error" id="password-min-length-error">
+                Senha deve ter pelo menos 6 caracteres.
+            </div>
+
+        </div>
+        <div class="form-field">
+            <div><label>Confirmar senha</label></div>
+            <input type="password" placeholder="confirme sua senha" id="confirm-password" oninput="onChangeConfirmPassword()">
+            <div class="error" id="password-doesnt-match-error">
+                Senha e confirmação de senha devem ser iguais.
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="solid" disabled="true" id="register-button" onclick="register()">Registrar</button>
+        </div>
+        <div>
+            <button type="button" class="clear" onclick="window.location.href='../../index.html'">Já tenho conta</button>
+        </div>
+    </form>
+</body>
+<link rel="stylesheet" href="../../../css/global.css">
+<link rel="stylesheet" href="../../../css/register.css">
+
+
+
+<script src="../../../js/loading.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/12.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.12.1/firebase-auth-compat.js"></script>
+<script src="../../../js/firebase-init.js"></script>
+<script src="../../../js/register.js"></script>
+
+</html>
