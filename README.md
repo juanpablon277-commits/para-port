@@ -87,7 +87,8 @@ O principal objetivo deste projeto foi praticar a construção de aplicações w
 
 Juan Pablo Nascimento
 
-- GitHub: https://github.com/juanpablon277-commits
+- GitHub: https://github.com/juan-p4ablo00/controle-gastos
+- Linkedin: https://www.linkedin.com/in/juan-pablo-nascimento/
 
 
 
